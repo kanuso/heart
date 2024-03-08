@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corazones Cambiantes</title>
+<style>
+    /* Establece el color de fondo de la página en negro */
+    body {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        color: white; /* Cambia el color del texto a blanco */
+    }
+
+    /* Estilo para los corazones */
+    .heart {
+        color: red;
+        transition: color 0.5s;
+        cursor: pointer;
+    }
+
+    /* Estilo para el contenedor de la pregunta */
+    #questionContainer {
+        margin-top: 20px; /* Agrega un espacio entre los corazones y la pregunta */
+    }
+
+    /* Estilo para los botones */
+    button {
+        margin-top: 10px; /* Agrega un espacio entre los botones */
+        padding: 10px 20px; /* Ajusta el padding de los botones */
+        font-size: 20px; /* Aumenta el tamaño del texto de los botones */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s; /* Agrega una transición para el cambio de tamaño del botón */
+    }
+
+    button.yes {
+        background-color: green;
+        color: white;
+    }
+
+    button.no {
+        background-color: red;
+        color: white;
+    }
+
+    /* Aumenta el tamaño del texto de la pregunta */
+    label {
+        font-size: 24px;
+    }
+
+    /* Estilo para la carita triste */
+    .sad-face {
+        font-size: 50px; /* Ajusta el tamaño de la carita triste */
+        margin-top: 20px; /* Agrega un espacio entre la pregunta y la carita triste */
+        display: none; /* Oculta la carita triste inicialmente */
+    }
+
+    /* Estilo para el ramo de rosas */
+    .rose-bouquet {
+        font-size: 50px; /* Ajusta el tamaño del ramo de rosas */
+        margin-top: 20px; /* Agrega un espacio entre la pregunta y el ramo de rosas */
+        display: none; /* Oculta el ramo de rosas inicialmente */
+    }
+
+    /* Estilo para la carita con corazones en los ojos */
+    .heart-eyes-face {
+        font-size: 50px; /* Ajusta el tamaño de la carita con corazones en los ojos */
+        margin-top: 20px; /* Agrega un espacio entre la pregunta y la carita con corazones en los ojos */
+        display: none; /* Oculta la carita con corazones en los ojos inicialmente */
+    }
+
+    /* Estilo para el texto "Te amo" */
+    .love-text {
+        font-size: 24px; /* Ajusta el tamaño del texto "Te amo" */
+        margin-top: 20px; /* Agrega un espacio entre la pregunta y el texto "Te amo" */
+        display: none; /* Oculta el texto "Te amo" inicialmente */
+    }
+</style>
+</head>
+<body>
+
+<!-- Contenedor para los corazones -->
+<div id="heartContainer">
+    <!-- Corazón representado por el icono de FontAwesome -->
+    <i id="heartIcon1" class="heart fas fa-heart fa-5x"></i>
+    <i id="heartIcon2" class="heart fas fa-heart fa-5x"></i>
+    <i id="heartIcon3" class="heart fas fa-heart fa-5x"></i>
+    <i id="heartIcon4" class="heart fas fa-heart fa-5x"></i>
+    <i id="heartIcon5" class="heart fas fa-heart fa-5x"></i>
+</div>
+
+<!-- Contenedor para la pregunta y los botones -->
+<div id="questionContainer">
+    <label>¿Quieres ser mi novia?</label>
+    <button class="yes" id="yesButton">Sí</button>
+    <button class="no" id="noButton">No</button>
+    <div id="sadFace" class="sad-face">&#128577;</div>
+    <div id="roseBouquet" class="rose-bouquet">&#127801;</div>
+    <div id="heartEyesFace" class="heart-eyes-face">&#128525;</div>
+    <div id="loveText" class="love-text">Te amo</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous"></script>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="./CorazonF.js"></script>
+
+</body>
+</html>
